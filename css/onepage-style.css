@@ -24,6 +24,10 @@ BASE (MOBILE) SIZE
 
 /********* BASE *********
 ***************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
 	background:#fff;
 	color:#666;
@@ -51,10 +55,7 @@ h1 {font-size:2.3em;}
     font-weight: normal;
     font-style: normal;
 }
-.icon:before {
-	font-family: 'MeteoconsRegular';
-	content: attr(data-icon);
-}
+
 p{ margin:0 0 1.5em;}
 /* links */
 a,
@@ -179,7 +180,7 @@ footer{
 .weather-widget{width:270px; margin:30px auto 0;}
 .weather-widget__weather-icon{ font-size:70px; width:270px; margin-bottom:70px;}
 .weather-widget__temperature-sign{ float:left; width:50px; font-size:70px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600; }
-.weather-widget__temperature-digits{float:left; width:150px; font-size:140px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600; }
+.weather-widget__temperature-digits{float:left; width:150px; font-size:140px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600; line-height: 130px}
 .weather-widget__temperature-system{float:left; width:70px; font-size:70px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:600;}
 .weather-widget__city{float:left; width:102px; margin: 53px  0 0 53px; font-size:30px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:500;}
 .weather-widget__date{float:left; margin: 56px  0 0 20px; font-size:22px; font-family:"Dosis", Arial, Helvetica, sans-serif; font-weight:500; color:#dc8804;}
