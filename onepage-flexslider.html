@@ -1,0 +1,22 @@
+<div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="images/onepage-pic1.jpg" /></li>
+                        <li><img src="images/onepage-pic2.jpg" /></li>
+                        <li><img src="images/onepage-pic3.jpg" /></li>
+                    </ul>
+                  </div>
+<script type="text/javascript">
+// Fireup the plugins
+$(document).ready(function(){
+	
+	// initialise  slideshow
+	 $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+
+});
+</script>
+
