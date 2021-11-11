@@ -63,12 +63,11 @@
  
  
 <!-- hero area (the grey one with a slider) -->
-    <section id="hero" class="background-yellow clearfix">       
+    <section id="hero" class="background-yellow clearfix pb-16">
        <div class="wrapper">
        
         <div class="city-image"></div>
-           <div class="weather-widget">
-            <div class="weather-widget__weather-icon icon" data-icon="1"></div>
+
             <div class="weather-widget__temperature-digits background-yellow__longshadow">Semantic Segmentation</div>
            </div>
         
@@ -77,27 +76,53 @@
 
 
 <!-- about section -->    
-	<section id="home">
+	<section id="home" class="pb-16">
     	<div class="wrapper centered-text clearfix">
-            <h1>WonderWeather is...</h1>
-            <p>...NOT your usual weather app! Unlike any other app it has the ultimately positive outlook on weather. If  you live in a damp hole and it’s raining like hell 360 days a year,  get WonderWeather app - it will tell you when to expect those 5 wonderfull sunny days! So you can get a leave from work and fully enjoy them.</p>
-    <p>With WonderWeather you can also wish for weather in your location! Type the desired temperature in WonderTemp field,  select desired conditions (sun, rain, hale, snow, wind) from WonderCond field, and WonderWeather will tell you the exact date when your wish will be granted!</p>
-   		</div>  
+            <h1>Semantic Segmentation is...</h1>
+            <p>Tiramisu sesame snaps gummies sweet roll pudding sweet caramels toffee topping. Sugar plum donut tart sweet toffee shortbread sugar plum candy bonbon. Gingerbread carrot cake jelly powder pastry gummi bears. Marshmallow danish jelly apple pie chocolate bar. Sweet pastry brownie cotton candy lollipop pie soufflé. Gummi bears sugar plum marzipan wafer marzipan sweet jujubes pudding marzipan. Ice cream lemon drops biscuit croissant tootsie roll croissant jelly chupa chups soufflé. Chupa chups dessert cake ice cream sweet cupcake wafer marshmallow. Brownie pie pie sugar plum lemon drops. Carrot cake lollipop ice cream caramels tiramisu marshmallow chocolate cake.</p>
+            <p>Wafer dragée cotton candy powder pastry oat cake bonbon. Tootsie roll donut powder marzipan muffin muffin sugar plum. Chocolate cake biscuit soufflé lollipop cotton candy donut cake chocolate bar. Sweet roll topping cheesecake shortbread bonbon toffee shortbread macaroon. Sugar plum cotton candy chocolate bar sesame snaps cheesecake. Cotton candy oat cake shortbread caramels tart gummies marshmallow danish. Macaroon jujubes pastry donut lemon drops biscuit. Ice cream halvah soufflé toffee jujubes. Jelly beans sweet sweet roll oat cake candy.</p>
+            <p>Chocolate bar caramels cookie cookie macaroon. Dessert caramels croissant cake soufflé tart dessert danish jelly. Fruitcake chocolate tart gummies cheesecake marzipan bonbon cookie. Bear claw brownie macaroon icing cake gingerbread liquorice toffee. Bear claw icing tiramisu tiramisu marzipan. Candy jelly-o pastry gummi bears ice cream gingerbread gummies brownie.</p>
+   		</div>
     </section><!-- #end content area -->
 
-    <section id="gallery" class="background-blue">
+    <section id="gallery" class="background-blue pb-16">
         <div class="wrapper centered-text clearfix">
-            <h1>Here will be gallery</h1>
+            <h1>Gallery</h1>
+            <div class="grid grid-cols-5 gap-3 pb-16">
+                <h2>Raw Image</h2>
+                <h2>Masked Image</h2>
+                <h2>Equalized Image</h2>
+                <h2>Vessels</h2>
+                <h2>MSF Vessels</h2>
+                
+                <div class="h-56 w-full bg-gray-200 border border-black">1a</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">1b</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">1c</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">1d</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">1e</div>
+
+                <div class="h-56 w-full bg-gray-200 border border-black">2a</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">2b</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">2c</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">2d</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">2e</div>
+
+                <div class="h-56 w-full bg-gray-200 border border-black">3a</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">3b</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">3c</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">3d</div>
+                <div class="h-56 w-full bg-gray-200 border border-black">3e</div>
+            </div>
         </div>
     </section>
     <!-- /.gallery -->
 
 
 <!-- downloads section -->
-	<section id="download" >
+	<section id="download" class="pb-16">
     	<div class="wrapper centered-text clearfix">
         <h1>Download gallery</h1>
-            <div class="border border-black px-8 py-4">
+            <div class="border border-gray-300 rounded-lg bg-gray-100 px-8 py-4">
                 <label class="block text-sm font-medium text-gray-700" for="">Name</label>
                 <input class="mb-4 pl-1.5 py-1.5 mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50" type="text">
 
@@ -110,20 +135,30 @@
                 <label class="block text-sm font-medium text-gray-700" for="">Purpose of download</label>
                 <input class="mb-4 pl-1.5 py-1.5 mt-1 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50" type="text">
 
-                <button class="bg-color-tertiary text-white px-4 py-2 rounded font-semibold" >Submit & download</button>
+                <button class="bg-color-tertiary text-white px-4 py-2 rounded font-semibold background-yellow filter drop-shadow shadow" >Submit & download</button>
             </div>
         </div>
     </section><!-- #end downloads section -->
 
-<section id="about" class="background-blue">
+<section id="about" class="background-blue pb-16">
     <div class="wrapper centered-text clearfix">
         <h1>This is about section</h1>
+        <p>Pudding marzipan icing jelly beans marshmallow. Sweet cake brownie pastry pie lollipop jelly. Tootsie roll shortbread sugar plum powder cookie. Sugar plum chocolate bar sweet lemon drops topping icing croissant sesame snaps tart. Gummi bears soufflé macaroon icing liquorice toffee icing cheesecake gummies. Cotton candy pudding dessert chocolate powder pie. Cookie cupcake gummi bears jujubes tootsie roll. Liquorice soufflé tiramisu gummies jujubes cake. Cake jelly-o toffee cookie jelly-o sesame snaps sweet lollipop. Cake candy canes marzipan wafer cotton candy liquorice chocolate bar lollipop. Jelly pudding cupcake oat cake cotton candy soufflé. Jelly beans dessert brownie ice cream pie halvah topping sugar plum caramels.</p>
+        <p>Cake gummies gummi bears chupa chups jelly tiramisu pie. Marshmallow biscuit cheesecake marzipan dragée. Sweet roll cupcake gingerbread dessert fruitcake bear claw muffin. Topping wafer wafer gummi bears sesame snaps sesame snaps chocolate cake jelly beans sugar plum. Sweet gingerbread biscuit brownie tootsie roll. Croissant jelly-o caramels topping cupcake pastry tart carrot cake lemon drops. Candy liquorice dragée powder candy. Donut soufflé cake macaroon sweet roll topping candy. Dessert bonbon chupa chups candy dragée donut dragée marzipan ice cream. Marzipan wafer marzipan powder icing pudding halvah. Jujubes cheesecake pastry caramels jujubes marzipan. Candy canes jelly beans liquorice sweet roll oat cake cupcake lemon drops topping.</p>
+        <p>Tootsie roll oat cake carrot cake tootsie roll cheesecake candy canes oat cake tart chocolate cake. Bear claw toffee croissant croissant caramels candy canes. Fruitcake dessert tootsie roll halvah chocolate caramels bonbon. Wafer marshmallow pie fruitcake caramels marshmallow cupcake.</p>
     </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="pb-16">
     <div class="wrapper centered-text clearfix">
         <h1>This is projects section</h1>
+        <p>Tiramisu pie lemon drops pastry toffee gummies candy canes biscuit biscuit. Dragée danish bonbon liquorice chocolate wafer wafer. Sesame snaps cake wafer gummies dessert biscuit caramels.</p>
+        <div class="grid grid-cols-1">
+            <li><a href="#">Example Project</a></li>
+            <li><a href="#">Eye Project</a></li>
+            <li><a href="#">Another Project</a></li>
+        </div>
+
     </div>
 </section>
       

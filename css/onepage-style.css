@@ -371,7 +371,8 @@ body:after {
 }
 .srt-menu li.li-weather-form{background:none; padding:0 0 0 10px;}
 
-.city-image{ display:block; float:left; width:40%; height:266px; margin-right:10%; background:url(../images/onepage-singapore.png) top right no-repeat;}
+.city-image{ display:block; float:left; width:40%; height:266px; margin-right:10%; background:url(../images/retina-transparent2.png) top right no-repeat;}
+
 .weather-widget{ width:310px; float:left;}
 .weather-widget__temperature-system{width:110px; font-size:116px; }
 
