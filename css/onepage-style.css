@@ -447,3 +447,23 @@ PRINT STYLESHEET
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+/*
+NEW CLASSES
+*/
+
+#admin-login{
+	visibility: hidden;
+	display: none;
+	animation: 4s fadeIn;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
