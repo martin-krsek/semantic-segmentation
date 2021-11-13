@@ -1,0 +1,15 @@
+#admin-main{
+    width: 200vw;
+}
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.srt-menu button {
+    display:		block;
+    position:		relative;
+}
+
+textarea {
+    resize: none;
+}
