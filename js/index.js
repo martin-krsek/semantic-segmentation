@@ -3,6 +3,9 @@ $('#admin-login-link').click(function() {
         'visibility': 'visible',
         'display': 'block'
     });
+
+
+
     setTimeout(function(){
         window.addEventListener("scroll", changeCss , false);
     }, 500);
@@ -16,15 +19,8 @@ function hideLogin() {
     window.removeEventListener("scroll", changeCss , false);
 }
 
-// https://stackoverflow.com/a/28392348
-function changeCss () { //TODO set scroll to dynapic value -> prevent bugs after editing page
-    console.log(scrollY)
-    this.scrollY < 2450 ? hideLogin() : console.log('nope');
+function changeCss () { //hide login section after scrolling out of section visibility
+    let rect = document.getElementById('admin-login').getBoundingClientRect();
+    let intViewportHeight = window.innerHeight;
+    0 < rect.top - intViewportHeight ? hideLogin() : null;
 }
-
-
-
-
-// home
-// about
-// projects
