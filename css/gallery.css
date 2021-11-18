@@ -1,0 +1,20 @@
+.MagicScroll[data-mode="carousel"] {
+    background: linear-gradient(90deg, rgba(161,188,240,1) 3%, rgba(138,207,236,1) 31%, rgba(181,217,247,1) 66%, rgba(213,236,228,1) 90%);
+}
+.MagicScroll[data-mode="cover-flow"] {
+    background: linear-gradient(90deg, rgba(161,188,240,1) 3%, rgba(138,207,236,1) 31%, rgba(181,217,247,1) 66%, rgba(213,236,228,1) 90%);
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
