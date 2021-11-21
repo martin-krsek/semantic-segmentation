@@ -3,7 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: db
+
 -- Čas generovania: Sun 21.Nov 2021, 10:41
+
 -- Verzia serveru: 8.0.27
 -- Verzia PHP: 7.4.20
 
@@ -44,6 +46,26 @@ INSERT INTO `admins` (`id`, `login`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
+
+-- Štruktúra tabuľky pre tabuľku `articles`
+--
+
+CREATE TABLE `articles` (
+  `title` varchar(40) COLLATE utf8_slovak_ci NOT NULL,
+  `article` varchar(150) COLLATE utf8_slovak_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_slovak_ci;
+
+--
+-- Sťahujem dáta pre tabuľku `articles`
+--
+
+INSERT INTO `articles` (`title`, `article`) VALUES
+('CLANOK 1', 'LOREM IMPSUM');
+
+-- --------------------------------------------------------
+
+--
+
 -- Štruktúra tabuľky pre tabuľku `downloads`
 --
 
@@ -90,6 +112,15 @@ ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
+=======
+-- Indexy pre tabuľku `articles`
+--
+ALTER TABLE `articles`
+  ADD PRIMARY KEY (`title`);
+
+--
+>>>>>>> local
 -- Indexy pre tabuľku `downloads`
 --
 ALTER TABLE `downloads`
