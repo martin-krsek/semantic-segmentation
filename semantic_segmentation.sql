@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: db
--- Čas generovania: Sun 21.Nov 2021, 10:54
+-- Čas generovania: Sun 21.Nov 2021, 11:00
 -- Verzia serveru: 8.0.27
 -- Verzia PHP: 7.4.20
 
