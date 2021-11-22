@@ -1,9 +1,6 @@
 version: '3.8'
 services:
   php-apache-environment:
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: php
     image: php:8.0-apache
     volumes:
@@ -23,7 +20,7 @@ services:
     ports:
       - '9906:3306'
     volumes:
-      - ./database/semantic_segmentation.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+      - "./schema.sql:/docker-entrypoint-initdb.d/schema.sql"
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
