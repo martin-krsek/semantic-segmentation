@@ -20,7 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Databáza: `semantic_segmentation`
 --
-CREATE DATABASE semantic_segmentation;
 use semantic_segmentation;
 -- --------------------------------------------------------
 
