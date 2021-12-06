@@ -7,37 +7,52 @@
     <link type="text/css" rel="stylesheet" href="js/magicscroll-trial/magicscroll/magicscroll.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/gallery.css">
-    <script type="text/javascript" src="js/magicscroll-trial/magicscroll/magicscroll.js"></script>
+    <script type="text/javascript" src="js/magicscroll-trial/magicscroll/magicscroll.js"></script><script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div id="gallery1" style="margin-top: 5%" class="MagicScroll" data-options="mode: carousel; height: 275px;">
-        <a href=><img src="images/img1.jpg"/></a>
-        <a href=><img src="images/img2.jpg"/></a>
-        <a href=><img src="images/img3.jpg"/></a>
-        <a href=><img src="images/img4.jpg"/></a>
-        <a href=><img src="images/img5.jfif"/></a>
-        <a href=><img src="images/img6.jfif"/></a>
-        <a href=><img src="images/img7.jfif"/></a>
-        <a href=><img src="images/img8.jpg"/></a>
-        <a href=><img src="images/img9.jpg"/></a>
-    </div>
 
-    <div id="gallery2" style="margin-top: 5%" class="MagicScroll" data-options="mode: cover-flow; height: 275px;">
-        <a href=><img src="images/img1.jpg"/></a>
-        <a href=><img src="images/img2.jpg"/></a>
-        <a href=><img src="images/img3.jpg"/></a>
-        <a href=><img src="images/img4.jpg"/></a>
-        <a href=><img src="images/img5.jfif"/></a>
-        <a href=><img src="images/img6.jfif"/></a>
-        <a href=><img src="images/img7.jfif"/></a>
-        <a href=><img src="images/img8.jpg"/></a>
-        <a href=><img src="images/img9.jpg"/></a>
+<!--verzia 1.0 za ktoru by sme šli do basy-->
+<!--    <div id="gallery1" style="margin-top: 5%" class="MagicScroll" data-options="mode: carousel; height: 275px;">-->
+<!--        <img id="img1"  src="images/retina.jpg" height="300" width="500"/>-->
+<!--        <a href=><img src="images/img2.jpg"/></a>-->
+<!--        <a href=><img src="images/img3.jpg"/></a>-->
+<!--        <a href=><img src="images/img4.jpg"/></a>-->
+<!--        <a href=><img src="images/img5.jfif"/></a>-->
+<!--        <a href=><img src="images/img6.jfif"/></a>-->
+<!--        <a href=><img src="images/img7.jfif"/></a>-->
+<!--        <a href=><img src="images/img8.jpg"/></a>-->
+<!--        <a href=><img src="images/img9.jpg"/></a>-->
+<!--    </div>-->
+
+<!--    <div id="gallery2" style="margin-top: 5%" class="MagicScroll" data-options="mode: cover-flow; height: 275px;">-->
+<!--        <img src="images/img1.jpg"/>-->
+<!--        <a href=><img id="img2" src="images/img2.jpg"/></a>-->
+<!--        <a href=><img  id="img3"src="images/img3.jpg"/></a>-->
+<!--        <a href=><img id="img4" src="images/img4.jpg"/></a>-->
+<!--        <a href=><img id="img5" src="images/img5.jfif"/></a>-->
+<!--        <a href=><img id="img6" src="images/img6.jfif"/></a>-->
+<!--        <a href=><img id="img7" src="images/img7.jfif"/></a>-->
+<!--        <a href=><img id="img8" src="images/img8.jpg"/></a>-->
+<!--        <a href=><img id="img9" src="images/img9.jpg"/></a>-->
+<!--    </div>-->
+
+
+    <div id="eyes_container">
+        <img id="eye_1" src="images/eyes/1orig.png" onmouseover="hover(this.id)"/>
+        <img id="eye_2" src="images/eyes/2orig.png" onmouseover="hover(this.id)"/>
+        <img id="eye_3" src="images/eyes/3orig.png" onmouseover="hover(this.id)"/>
+        <img id="eye_4" src="images/eyes/4orig.png" onmouseover="hover(this.id)"/>
+        <img id="eye_5" src="images/eyes/5orig.png" onmouseover="hover(this.id)"/>
     </div>
 
     <a href="example.zip" download="exampleZip">
         <button class="btn" style="width:100%"><i class="fa fa-download"></i> Download</button>
     </a>
+
+
+    <div id="myModal" class="modal">
+    </div>
 
 <script src="js/gallery.js"></script>
 </body>
