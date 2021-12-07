@@ -67,11 +67,11 @@
 // }
 
 
-const listener = (element) => {
-    element.setAttribute('hidden', true);
-
-    element.removeEventListener('transitionend', listener);
-};
+// const listener = (element) => {
+//     element.setAttribute('hidden', true);
+//
+//     element.removeEventListener('transitionend', listener);
+// };
 
 // function hide(element) {
 //     element.addEventListener('transitionend', listener(element));
@@ -86,34 +86,30 @@ const end = [255, 255, 255, 1];
 var modal = document.getElementById("myModal");
 
 $(document).ready(function() {
-    $(modal).hide();
     for (let i = 1; i < 6; i++) {
         let id="eye_"+i;
         let element = document.getElementById(id);
         let classes_img_id = id.substr(4,1);
         classes_img_id = classes_img_id + "classes.png";
 
-        element.addEventListener("mouseover", ()=>{ show(modal, classes_img_id)})
-        element.addEventListener("mouseout", ()=>{ hide(modal)})
+        element.addEventListener("mouseover", ()=>{ show(modal, element, classes_img_id)})
+        element.addEventListener("mouseout", ()=>{ hide(modal, element)})
+        // element.addEventListener("click", ()=>{$("#myModal").toggleClass('visible_modal');})
     }
 });
 
 
-function show(modal, classes_img_id){
+function show(modal, element,  classes_img_id){
+    // $("#myModal").toggleClass('visible_modal');
     modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
-    // $(modal).show("slow");
-    // modal.style.visibility = "visible";
+    // $(element).on('', function () {modal.toggleClass('visible_modal');});
     modal.style.display = "block";
-    // $(modal).fadeIn( 2000);
-    // $(modal).stop().animate({ "opacity": 1 },50);
-    // $("#myModal").fadeIn("slow");
-    // modal.fadeIn();
 }
 
-function hide(modal){
-    // $(modal).fadeOut( "slow" , 0);
-    // modal.style.visibility = "hidden";
+function hide(modal, element){
+    // $("#myModal").toggleClass('visible_modal');
     modal.style.display = "none";
+    // $(element).on('click', function () {modal.toggleClass('visible_modal');});
     modal.innerHTML="";
 }
 
@@ -135,3 +131,12 @@ function hover(id){
     }
 
 }
+
+
+var box = $('#box');
+
+$('button').on('click', function () {
+
+    box.toggleClass('hidden');
+
+});
