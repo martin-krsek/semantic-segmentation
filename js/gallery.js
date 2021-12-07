@@ -86,6 +86,7 @@ const end = [255, 255, 255, 1];
 var modal = document.getElementById("myModal");
 
 $(document).ready(function() {
+    $(modal).hide();
     for (let i = 1; i < 6; i++) {
         let id="eye_"+i;
         let element = document.getElementById(id);
@@ -98,16 +99,21 @@ $(document).ready(function() {
 });
 
 
-
-
-
 function show(modal, classes_img_id){
     modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
-    modal.style.visibility = "visible";
+    // $(modal).show("slow");
+    // modal.style.visibility = "visible";
+    modal.style.display = "block";
+    // $(modal).fadeIn( 2000);
+    // $(modal).stop().animate({ "opacity": 1 },50);
+    // $("#myModal").fadeIn("slow");
+    // modal.fadeIn();
 }
 
 function hide(modal){
-    modal.style.visibility = "hidden";
+    // $(modal).fadeOut( "slow" , 0);
+    // modal.style.visibility = "hidden";
+    modal.style.display = "none";
     modal.innerHTML="";
 }
 
