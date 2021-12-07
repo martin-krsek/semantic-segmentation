@@ -73,14 +73,44 @@ const listener = (element) => {
     element.removeEventListener('transitionend', listener);
 };
 
-function hide(element) {
-    element.addEventListener('transitionend', listener(element));
-
-    element.classList.remove('is-open');
-}
+// function hide(element) {
+//     element.addEventListener('transitionend', listener(element));
+//
+//     element.classList.remove('is-open');
+// }
 
 const start = [40, 40, 40, 0];
 const end = [255, 255, 255, 1];
+
+
+var modal = document.getElementById("myModal");
+
+$(document).ready(function() {
+    for (let i = 1; i < 6; i++) {
+        let id="eye_"+i;
+        let element = document.getElementById(id);
+        let classes_img_id = id.substr(4,1);
+        classes_img_id = classes_img_id + "classes.png";
+
+        element.addEventListener("mouseover", ()=>{ show(modal, classes_img_id)})
+        element.addEventListener("mouseout", ()=>{ hide(modal)})
+    }
+});
+
+
+
+
+
+function show(modal, classes_img_id){
+    modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
+    modal.style.visibility = "visible";
+}
+
+function hide(modal){
+    modal.style.visibility = "hidden";
+    modal.innerHTML="";
+}
+
 
 function hover(id){
     let modal = document.getElementById("myModal");
@@ -91,13 +121,11 @@ function hover(id){
 
 
     btn.onmouseover = function() {
-        modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
-        modal.style.visibility = "visible";
+        show(modal, classes_img_id);
     };
 
     btn.onmouseout = function() {
-        modal.style.visibility = "hidden";
-        modal.innerHTML="";
+        hide(modal);
     }
 
 }
