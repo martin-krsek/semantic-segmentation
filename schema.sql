@@ -3,9 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: db
-
--- Čas generovania: Sun 21.Nov 2021, 10:41
-
+-- Čas generovania: Sun 21.Nov 2021, 10:54
 -- Verzia serveru: 8.0.27
 -- Verzia PHP: 7.4.20
 
@@ -22,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Databáza: `semantic_segmentation`
 --
-
+CREATE DATABASE semantic_segmentation;
+use semantic_segmentation;
 -- --------------------------------------------------------
 
 --
@@ -46,7 +45,6 @@ INSERT INTO `admins` (`id`, `login`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
-
 -- Štruktúra tabuľky pre tabuľku `articles`
 --
 
@@ -65,7 +63,6 @@ INSERT INTO `articles` (`title`, `article`) VALUES
 -- --------------------------------------------------------
 
 --
-
 -- Štruktúra tabuľky pre tabuľku `downloads`
 --
 
@@ -112,15 +109,12 @@ ALTER TABLE `admins`
   ADD PRIMARY KEY (`id`);
 
 --
-<<<<<<< HEAD
-=======
 -- Indexy pre tabuľku `articles`
 --
 ALTER TABLE `articles`
   ADD PRIMARY KEY (`title`);
 
 --
->>>>>>> local
 -- Indexy pre tabuľku `downloads`
 --
 ALTER TABLE `downloads`
