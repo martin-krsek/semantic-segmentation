@@ -4,6 +4,9 @@
 <!-- hero section -->
 <?php include 'sections/hero.html'; ?>
 
+<!-- kysucan, DELETE ked rozbehas docker db -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 <form onsubmit="updateSections(event);">
     <section id="home-edit" class="pb-16">
         <div class="wrapper centered-text clearfix h-full">
