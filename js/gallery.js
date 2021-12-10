@@ -93,24 +93,28 @@ $(document).ready(function() {
         classes_img_id = classes_img_id + "classes.png";
 
         element.addEventListener("mouseover", ()=>{ show(modal, element, classes_img_id)})
-        element.addEventListener("mouseout", ()=>{ hide(modal, element)})
+        element.addEventListener("mouseout", ()=>{ hide(modal, element, i)})
         // element.addEventListener("click", ()=>{$("#myModal").toggleClass('visible_modal');})
     }
 });
 
 
 function show(modal, element,  classes_img_id){
+    // console.log(element);
+    element.src="images/eyes/"+classes_img_id;
     // $("#myModal").toggleClass('visible_modal');
-    modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
+    // modal.innerHTML="<img style='margin-left: 30%' src=\"images/eyes/"+classes_img_id+"\" height='500' width='500'/>";
     // $(element).on('', function () {modal.toggleClass('visible_modal');});
-    modal.style.display = "block";
+    // modal.style.display = "block";
 }
 
-function hide(modal, element){
+function hide(modal, element, id){
     // $("#myModal").toggleClass('visible_modal');
-    modal.style.display = "none";
+    // modal.style.display = "none";
     // $(element).on('click', function () {modal.toggleClass('visible_modal');});
-    modal.innerHTML="";
+    // modal.innerHTML="";
+    id = id+"orig.png"
+    element.src="images/eyes/"+id;
 }
 
 
