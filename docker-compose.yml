@@ -1,6 +1,7 @@
 version: '3.8'
 services:
   php-apache-environment:
+    build: .
     container_name: php
     image: php:8.0-apache
     volumes:
@@ -13,7 +14,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: semantic_segmentation
+      MYSQL_DATABASE: TP
       MYSQL_USER: user
       MYSQL_PASSWORD: password
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
