@@ -2,7 +2,7 @@
 
 require_once("../controllers/SectionController.php");
 
-$sectionController = (new SectionController());
+$sectionController = new SectionController();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
