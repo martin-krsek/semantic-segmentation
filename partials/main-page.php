@@ -1,17 +1,25 @@
-        <!-- hero section -->
-        <?php include 'partials/sections/hero.html'; ?>
+<?php 
 
-        <!-- home section -->
-        <?php include 'partials/sections/home.html'; ?>
+# path goes from index.php, as main-page.php is included in index.php
+require_once($_SERVER['DOCUMENT_ROOT']."/controllers/SectionController.php");
+$sectionController = new SectionController();
+$sections = $sectionController->getSections();
+?>
+        
+<!-- hero section -->
+<?php include 'partials/sections/hero.html'; ?>
 
-        <!-- gallery section -->
-        <?php include 'partials/sections/gallery.html'; ?>
+<!-- home section -->
+<?php include 'partials/sections/home.php'; ?>
 
-        <!-- downloads section -->
-        <?php include 'partials/sections/download.html'; ?>
+<!-- gallery section -->
+<?php include 'partials/sections/gallery.html'; ?>
 
-        <!-- about section -->
-        <?php include 'partials/sections/about.html'; ?>
+<!-- downloads section -->
+<?php include 'partials/sections/download.html'; ?>
 
-        <!-- projects section -->
-        <?php include 'partials/sections/projects.html'; ?>
+<!-- about section -->
+<?php include 'partials/sections/about.php'; ?>
+
+<!-- projects section -->
+<?php include 'partials/sections/projects.php'; ?>
